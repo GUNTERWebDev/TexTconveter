@@ -1,0 +1,49 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png" type="x-icon">
+    <title>WordStyler</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome to the Convert Case Text Generator Tool</h2>
+        <ul>
+            <li><a href="">Convert Case</a></li>
+            <li><a href="">Binary</a></li>
+            <li><a href="">Morse Code</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="inputText">
+            
+            <label><h2>Write Here <i class="fa-solid fa-down-long"></i></h2><br>
+                <textarea rows="10" cols="80" id="Text" required="" onkeyup="charCount(this)"></textarea><br>
+                <div class="btns">
+    
+                    <button id="UPPERCASE">UPPER CASE</button>
+                    <button id="lowercase">lower case</button>
+                    <button id="Capitalize">Capitalize Case</button>
+                    <button id="Reverse">Reverse case</button>
+                    <button id="alternate">aLtErNaTe cAsE</button>
+                    <button class="del" id="Clear">Clear</button>
+                </div>    
+                    <p>words : <span id="Words">0</span></p>
+                    <p>characters : <span id="characters">0</span></p>
+                </label>
+        </div>
+        <div class="explain">
+            <h2>UPPER CASE: "HELLO WORLD!"</h2>
+            <h2>lower case: "hello world!"</h2>
+            <h2>Capitalize Case: "Hello World!"</h2>
+            <h2>Reverse case: "!DLROW OLLEH"</h2>
+            <h2>aLtErNaTe cAsE: "HeLlO WoRlD!"</h2>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+
+</body></html>

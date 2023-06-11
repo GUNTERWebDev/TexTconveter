@@ -7,7 +7,19 @@ const clear = document.querySelector('#Clear')
 const inverse = document.querySelector('#alternate')
 const charNum = document.querySelector("#characters");
 const wordsNum = document.querySelector("#Words");
+const Binary = document.querySelector('#Binary');
 
+// bin
+Binary.addEventListener('click', () => {
+    const inputText = textArea.value;
+    let bin = '';
+
+    for (let i = 0; i < inputText.length; i++) {
+      bin += inputText[i].charCodeAt(0).toString(2) + ' ';
+    }
+
+    textArea.value = bin;
+  });
 
 // count 
 function charCount() {
